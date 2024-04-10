@@ -20,7 +20,7 @@ const Register = (props) => {
     try {
       setData({ ...data, error: null });
       await axios.post(
-        "/api/auth/register",
+        "https://authentication-ud-app-backend.onrender.com/api/auth/register",
         { name, email, password },
         {
           headers: {

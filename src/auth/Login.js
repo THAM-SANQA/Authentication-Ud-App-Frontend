@@ -19,7 +19,7 @@ const Login = (props) => {
     try {
       setData({ ...data, error: null });
       const res = await axios.post(
-        "/api/auth/login",
+        "https://authentication-ud-app-backend.onrender.com/api/auth/login",
         { email, password },
         {
           headers: {

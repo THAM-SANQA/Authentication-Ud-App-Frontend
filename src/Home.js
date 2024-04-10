@@ -5,7 +5,7 @@ const Home = (props) => {
   const [user, setUser] = useState(null);
 
   const getUser = async () => {
-    const res = await axios.get("https://authentication-ud-app-backend.onrender.com", {
+    const res = await axios.get("https://authentication-ud-app-backend.onrender.com/api/auth/", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
