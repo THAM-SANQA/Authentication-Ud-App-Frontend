@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = (props) => {
   const [data, setData] = useState({
@@ -67,6 +68,9 @@ const Login = (props) => {
                 Login
               </button>
             </div>
+            <p className = "mt-3 text-center" >
+               new user? <Link to = "/register"> Register </Link>
+            </p>
           </form>
         </div>
       </div>
